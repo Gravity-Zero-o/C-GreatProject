@@ -340,7 +340,8 @@ void delCity(Map &mapObj)
 	cout<<"请输入想删除的城市编号：";
 	cin>>num;
 	if(mapObj.FindCity(num)!=-1)
-	{
+	{       
+                mapObj.ShowCity(mapObj.FindCity(num));
 		char c;
 		cout<<"是否确定删除该城市(y/n):";
 		cin>>c;
